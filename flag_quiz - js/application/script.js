@@ -72,9 +72,10 @@ function pickResult(res, ans){
    h3Tag.textContent = message;
    resultDiv.style.display = "flex";
    nextBtn.style.display = "inline-block";
-   answer.value = ""
+   
 }
 nextBtn.addEventListener("click", function(){
+    answer.value = "";
     scoreTag.textContent = score + "/" + current;
     if(current != (flags.length-1)){
         pickFlag();
